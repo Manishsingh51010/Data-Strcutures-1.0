@@ -32,10 +32,13 @@ void print(int mat[max][max],int n){
 }
 
 int main(){
-int mat[max][max] = { { 4, 1, 3 },
-                      { 9, 6, 8 },
-                      { 5, 2, 7 } };
-    int n = 3;
+int mat[max][max];
+ int n=3;
+ for(int i=0;i<n;i++){
+  for(int j=0;j<n;j++){
+    cin>>mat[i][j]; 
+  }
+ }
     cout<<"Before:\n";
     print(mat,n);
     sortrowandcol(mat,n);
